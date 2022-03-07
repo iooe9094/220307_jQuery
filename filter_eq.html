@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/220304/jquery_exercise/js/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function() {
+            $("div li:eq(0)").css("background-color","yellow");
+            // ul의 li 0번 인덱스인 항목1
+            $("div li:eq(3)").css("background-color","pink");
+        })
+    </script>
+</head>
+<body>
+    <!-- 연습문제 01 -->
+    <div>
+        <h2>:eq(index) 필터</h2>
+        <ul>
+            <li>항목1</li>
+            <li>항목2</li>
+            <li>항목3</li>
+            <li>항목4</li>
+            <li>항목5</li>
+        </ul>
+    </div>
+</body>
+</html>

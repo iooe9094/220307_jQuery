@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/220304/jquery_exercise/js/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function() {
+            $('a').click(function(event) {
+                alert('click');
+                event.preventDefault(); // 이벤트제거 : preventDefault
+            });
+        });
+    </script>
+</head>
+<body>
+    <a href="http://hanb.co.kr">Hanbit Academy</a>
+</body>
+</html>

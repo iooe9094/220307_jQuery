@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/220304/jquery_exercise/js/jquery-3.6.0.min.js"></script>
+    <script>
+        $(function() {
+            $('input').focus(function() {
+                $(this).css('background-color','yellow');
+            });
+
+            $('input').blur(function() { // foucs <-> blur
+                $(this).css('background-color','pink');
+            });
+
+            $('select').change(function() { // option이 변경했을 때 걸리는 이벤트 : change
+                $('#show').text('선택 박스의 값이 바뀌었어요!');
+            });
+        });
+    </script>
+</head>
+<body>
+    <p>- 아이디 : <input type="text"></p>
+    <select>
+        <option>2020</option>
+        <option>2021</option>
+        <option>2022</option>
+        <option>2023</option>
+    </select>
+    <!-- 화면 출력 위치 -->
+    <p id="show"></p>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/220304/jquery_exercise/js/jquery-3.6.0.min.js"></script>
+    <script>
+        // 아래 %(function() {}은 window.onload, defer와 효과 같음
+        // HTMl보다 Javascript를 뒤에서 실행시키는 것
+        $(function() {
+            $('#btn').click(function() {
+                $('#show').text("안녕하세요");
+            })
+        })
+    </script>
+</head>
+<body>
+    <!-- 연습문제 1 버튼 클릭 시아래 출력 위치에 안녕하세요 라고 출력해보세요 -->
+    <button id="btn">클릭!</button>
+    <!-- 화면 출력 위치 -->
+    <p id="show"></p>
+</body>
+</html>
